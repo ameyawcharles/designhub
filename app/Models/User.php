@@ -8,7 +8,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Grimzy\Laravel\MysqlSpatial\Eloquent\SpatialTrait;
 
-class User extends Authenticatable implements JWTS
+class User extends Authenticatable implements JWTSubject
 {
     use Notifiable, SpatialTrait;
 
